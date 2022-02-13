@@ -1,0 +1,602 @@
+.grid{
+    display:grid;
+    grid-template-areas: 
+     "header"
+     "slide"
+     "textoboton"
+     "articulo"
+     "footer";
+    grid-template-columns: auto;
+    margin: 0;
+}
+header{
+    grid-area: header;
+    background: linear-gradient(300deg, #fca89e, #5f568b);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    font-family: "Roboto thin";
+}
+section#slide{
+    grid-area: slide;
+    background-image: url("../img/img_slide1.png");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+section#textoboton{
+    grid-area: textoboton;
+    display: flex;
+    justify-content: space-around;
+}
+section#articulo{
+    grid-area: articulo;
+    width: 100%;
+    height: 350px;
+    display:flex;
+    font-family: "Roboto";
+}
+footer{
+    grid-area: footer;
+    background-color: #ffffff;
+    font-family: "Roboto";
+    font-size: 12px;
+    color: lightgrey;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+footer div h2{
+    color: #2B4A86
+}
+/* Menu */
+.logotype{
+    width: 239px;
+    padding: 48px 10%;
+    }
+.container-logotype{
+    height: 100%;
+    width: 30%;
+    }
+.container-breadcrumb{
+    height: 100%;
+    width: 70%;
+    }
+/* Style the list in menu*/
+ul.breadcrumb {
+    margin:0;
+    padding: 48px 10%;
+    list-style: none;
+    background-color: transparent;
+    text-align:right;
+}
+/* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+}
+/* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #ffffff;
+    content: "|\00a0";
+}
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color:#5f568b;
+}
+/* Define my principal slide in Home*/
+.container_info_slide{
+    width: 50%;
+}
+.title_slide{
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #2B4A86;
+    text-align: center;
+}
+.text_slide{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+.btn_slide{
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    width: 90px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_slide a{
+    font-family: "Roboto";
+    font-size: 14px;
+    color:#ffffff;
+    text-decoration: none;
+}
+/* Define my center text block in Home*/
+.text_block{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #7C95C5;
+    text-align: center;  
+}
+.btn_text_block{
+    border-radius: 10px;
+    border: 1px solid #7c95c5;
+    width: 90px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.btn_text_block a{
+    font-family: "Roboto";
+    font-size: 14px;
+    color:#7c95c5;
+    text-decoration: none;  
+}
+.container_text_block{
+    margin-top: 40px;
+    margin-bottom: 40px; 
+}
+/* Section skincare in Home */
+.container_section_skincare{
+    height: 100%;
+    width: 50%;
+    background-color: #FFEFEF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.title_section_skincare{
+    font-size: 20px;
+    color: #2B4A86;
+    text-align: left;
+    margin: 0;
+}
+.text_section_skincare{
+    font-size: 16px;
+    color: #7c95c5;
+    text-align: left;
+}
+.btn_section_skincare{
+    border-radius: 10px;
+    border: 2px solid #2B4A86;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_section_skincare a{
+    font-size: 14px;
+    color:#2B4A86;
+    text-decoration: none;
+}
+.container_img_skincare{
+    background-image: url("../img/img_section_sk.png");
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+}
+/* Section skincare */
+.section_skincare{
+    width: 100%;
+    height: 350px;
+    display:flex;
+    font-family: "Roboto";
+}
+.container_section_skincare{
+    height: 100%;
+    width: 50%;
+    background-color: #FFEFEF;
+}
+.info_skincare{
+    padding-left: 5%;
+}
+.title_section_skincare{
+    font-size: 20px;
+    color: #2B4A86;
+    text-align: left;
+    margin: 0;
+    padding-top: 15%;
+}
+.text_section_skincare{
+    font-size: 16px;
+    color: #7c95c5;
+    text-align: left;
+}
+.btn_section_skincare{
+    border-radius: 10px;
+    border: 2px solid #2B4A86;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_section_skincare a{
+    font-size: 14px;
+    color:#2B4A86;
+    text-decoration: none;
+}
+.container_img_skincare{
+    background-image: url("../img/img_section_sk.png");
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+}
+/* SKINCARE PAGE */
+section#slide-skincare{
+    grid-area: slide;
+    background-image: url("../img/slide_skincare.png");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_text_block_page_skincare{ 
+    background-color: #FFEFEF;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.text_block{
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #2B4A86;
+    text-align: center;  
+}
+.section_page_skincare{
+    height: 350px;
+    display:flex;
+    font-family: "Roboto";
+    margin: 100px;
+    align-items: center;
+}
+.title_section_page_skincare{
+    font-size: 25px;
+    color: #2B4A86;
+    text-align: left;
+    margin: 0;
+}
+.text_section_page_skincare{
+    font-size: 20px;
+    color: #7c95c5;
+    text-align: left;
+}
+/* CONSEJOS PAGE */
+section#slide-consejos{
+    grid-area: slide;
+    background-image: url("../img/slide_consejos.png");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_consejos{
+    width: 100%;
+    height: 450px;
+    display:flex;
+    font-family: "Roboto";
+    margin-top: 50px;
+}
+.container_consejos{
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.info_consejos{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.title_consejos{
+    font-size: 25px;
+    color: #2B4A86;
+    text-align: left;
+    margin: 0;
+    padding-top: 5%;
+}
+.text_consejos{
+    font-size: 15px;
+    color: #7c95c5;
+    text-align: left;
+}
+.container_img_consejos{
+    background-image: url(../img/01_consejos.png);
+    background-size: cover;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0px;
+}
+/* NOSOTROS PAGE */
+.container_text_block_page_nosotros{
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    background-color: #ffffff;
+}
+.text_block_nosotros{
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #2B4A86;
+    text-align: left;  
+    padding-left: 15%;
+    padding-right: 15%;
+}
+/* FOOTER */
+  .list_footer{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.p_{
+    margin: 0;
+    padding: 0;
+}
+.icons_footer{
+    width: 40px;
+    margin-right: 5px;
+}
+.element_list_footer{
+    display: inline;
+}
+.element_list_footer a{
+    text-decoration: none;
+}
+/*CONTACTO PAGE*/
+section#slide-contacto{
+    grid-area: slide;
+    background-image: url("../img/slide_contacto.png");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_text_block_page_contacto{
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    background-color: #ffffff;
+}
+.text_block_contacto{
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #2B4A86;
+    text-align: center;  
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.section_contacto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    font-family: "Roboto";      
+}
+.title_contacto{
+    font-size: 20px;
+    color: #2B4A86;
+    text-align: left;
+    margin: 0;
+    padding-top: 5%;
+}
+.text_contacto{
+    font-size: 15px;
+    color: #7c95c5;
+    text-align: left;
+}
+.text_form{
+    font-size: 15px;
+    color: #7C95C5;
+    text-align: left;
+}
+input[type=text]{
+    border: 1px solid #7C95C5;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+input[type=email]{
+    border: 1px solid #7C95C5;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #7C95C5;
+    border-radius: 5px;
+    background-color: #ffffff;
+    resize: none;
+    height: 120px;
+}
+input[type=submit]{
+    border: 1px solid #7C95C5;
+    background-color: #7C95C5;
+    color:#ffffff;
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+}    
+/*MEDIA TABLET HOME*/
+@media screen and (max-width: 768px){
+    header{
+        grid-area: header;
+        background: linear-gradient(300deg, #fca89e, #5f568b);
+        width: 100%;
+        height: auto;
+        font-family: "Roboto thin";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logotype{
+    width: 250px;
+    padding: 30px;
+    }
+    .container-logotype{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+    }
+    ul.breadcrumb{
+        margin: 0;
+        padding: 0px 5% 10%;
+        list-style: none;
+        background-color: transparent;
+        text-align: right;
+        display: flex;
+    }
+    section#slide{
+        background-image: url("../img/img_slide1-tablet.png");
+    }
+    }
+    /*MEDIA MOBILE HOME*/
+    @media screen and (max-width: 425px){
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    ul.breadcrumb li{
+        font-size: 12px;
+    }
+    ul.breadcrumb{
+        justify-content: space-evenly;
+    }
+    section#slide{
+        background-image: url("../img/img_slide1-mobile.png");
+    }
+    .container_info_slide{
+        width: 45%;
+    }
+    .title_slide{
+        font-size: 14px;
+    }
+    .text_slide{
+        font-size: 10px;
+    }
+    .btn_slide{
+        width: 60px;
+        height: 20px;
+    }
+    .btn_slide a{
+        font-size: 12px;
+    }
+    .text_block{
+        font-size: 10px; 
+    } 
+    section#articulo{
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+    .container_img_skincare{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    }
+    .container_section_skincare{
+        width: 100%;
+    }
+    .title_section_skincare{
+        font-size: 16px;
+        text-align: center;
+    }
+    .text_section_skincare{
+        font-size: 12px;
+        text-align: center;
+    }
+    .btn_section_skincare{
+        width: 90px;
+        height: 30px;
+        text-align: center;
+    }
+    .btn_section_skincare a{
+        font-size: 14px;
+}
+.btn_section_skincare{
+    border-radius: 10px;
+    border: 2px solid #2B4A86;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+footer{
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+} 
+/*MEDIA TABLET SKINCARE*/
+@media screen and (max-width: 768px){
+    section#slide-contacto{
+        background-image: url("../img/slide_skincare-tablet.png");
+        height: auto; 
+}
+/*MEDIA MOBILE SKINCARE*/
+@media screen and (max-width: 425px){
+section#slide-contacto{
+        background-image: url("../img/slide_skincare-mobile.png");
+}
+}
+.text_block_contacto{
+        font-size: 12px;
+}
+.title_contacto {
+        font-size: 16px;
+}
+}  
+/*MEDIA TABLET CONTACT*/
+@media screen and (max-width: 768px){
+section#slide-contacto{
+    background-image: url("../img/slide_contacto-tablet.png");
+}       
+}
+/*MEDIA MOBILE CONTACT*/
+@media screen and (max-width: 425px){
+section#slide-contacto{
+    background-image: url("../img/slide_contacto-mobile.png");
+}
+.section_contacto{
+    width: auto;
+    padding: 0 40px; 
+}
+.text_block_contacto{
+    font-size: 12px;
+}
+.title_contacto {
+    font-size: 16px;
+}
+}
