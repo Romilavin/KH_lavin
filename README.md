@@ -1,2 +1,3 @@
 # kh_lavin
-Este proyecto es para Coderhouse
+Proyecto es para Coderhouse
+Cursada Desarrollo Web 
