@@ -48,11 +48,12 @@ footer {
     text-align: left;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    margin: 50px;
 }
 
 footer div h2 {
-    color: #2B4A86
+    color: #2B4A86;
+    font-size: 20px;
 }
 
 /* Menu */
@@ -65,16 +66,20 @@ footer div h2 {
 .container-logotype {
     height: 100%;
     width: 30%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-breadcrumb {
+.container-menuHeader {
     height: 100%;
     width: 70%;
 }
 
 /* Style the list in menu*/
 
-ul.breadcrumb {
+ul.menuHeader {
     margin: 0;
     padding: 48px 10%;
     list-style: none;
@@ -84,14 +89,14 @@ ul.breadcrumb {
 
 /* Display list items side by side */
 
-ul.breadcrumb li {
+ul.menuHeader li {
     display: inline;
     font-size: 20px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 
-ul.breadcrumb li+li:before {
+ul.menuHeader li+li:before {
     padding: 8px;
     color: #ffffff;
     content: "|\00a0";
@@ -99,14 +104,14 @@ ul.breadcrumb li+li:before {
 
 /* Add a color to all links inside the list */
 
-ul.breadcrumb li a {
+ul.menuHeader li a {
     color: #ffffff;
     text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 
-ul.breadcrumb li a:hover {
+ul.menuHeader li a:hover {
     color: #5f568b;
 }
 
@@ -131,11 +136,6 @@ ul.breadcrumb li a:hover {
 }
 
 .btn_slide {
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-    width: 90px;
-    height: 30px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,6 +163,7 @@ ul.breadcrumb li a:hover {
 }
 
 /*Hover animation in text block*/
+
 #textoboton::before {
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -216,19 +217,15 @@ ul.breadcrumb li a:hover {
 }
 
 .btn_section_skincare {
-    border-radius: 10px;
-    border: 2px solid #2B4A86;
-    width: 90px;
-    height: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .btn_section_skincare a {
     font-size: 14px;
-    color: #2B4A86;
     text-decoration: none;
+    color: #2B4A86 !important;
+    border-color: #2B4A86;
 }
 
 .container_img_skincare {
@@ -247,51 +244,8 @@ ul.breadcrumb li a:hover {
     font-family: "Roboto";
 }
 
-.container_section_skincare {
-    height: 100%;
-    width: 50%;
-    background-color: #FFEFEF;
-}
-
 .info_skincare {
     padding-left: 5%;
-}
-
-.title_section_skincare {
-    font-size: 20px;
-    color: #2B4A86;
-    text-align: left;
-    margin: 0;
-    padding-top: 15%;
-}
-
-.text_section_skincare {
-    font-size: 16px;
-    color: #7c95c5;
-    text-align: left;
-}
-
-.btn_section_skincare {
-    border-radius: 10px;
-    border: 2px solid #2B4A86;
-    width: 90px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn_section_skincare a {
-    font-size: 14px;
-    color: #2B4A86;
-    text-decoration: none;
-}
-
-.container_img_skincare {
-    background-image: url("../img/img_section_sk.png");
-    background-size: cover;
-    height: 100%;
-    width: 50%;
 }
 
 /* SKINCARE PAGE */
@@ -322,7 +276,6 @@ section#slide-skincare {
 }
 
 .section_page_skincare {
-    height: 350px;
     display: flex;
     font-family: "Roboto";
     margin: 100px;
@@ -357,7 +310,6 @@ section#slide-consejos {
 
 .section_consejos {
     width: 100%;
-    height: 450px;
     display: flex;
     font-family: "Roboto";
     margin-top: 50px;
@@ -448,6 +400,7 @@ section#slide-contacto {
     grid-area: slide;
     background-image: url("../img/slide_contacto.png");
     background-size: cover;
+    background-position: center;
     height: 300px;
     width: 100%;
     display: flex;
@@ -474,8 +427,8 @@ section#slide-contacto {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 700px;
     font-family: "Roboto";
+    padding: 5% 0%;
 }
 
 .title_contacto {
@@ -483,7 +436,6 @@ section#slide-contacto {
     color: #2B4A86;
     text-align: left;
     margin: 0;
-    padding-top: 5%;
 }
 
 .text_contacto {
@@ -557,7 +509,7 @@ input[type=submit] {
         justify-content: center;
         width: 40%;
     }
-    ul.breadcrumb {
+    ul.menuHeader {
         margin: 0;
         padding: 0px 5% 10%;
         list-style: none;
@@ -580,10 +532,10 @@ input[type=submit] {
         flex-direction: column;
         align-items: center;
     }
-    ul.breadcrumb li {
+    ul.menuHeader li {
         font-size: 12px;
     }
-    ul.breadcrumb {
+    ul.menuHeader {
         justify-content: space-evenly;
     }
     section#slide {
@@ -598,15 +550,12 @@ input[type=submit] {
     .text_slide {
         font-size: 10px;
     }
-    .btn_slide {
-        width: 60px;
-        height: 20px;
-    }
     .btn_slide a {
         font-size: 12px;
     }
     .text_block {
-        font-size: 10px;
+        font-size: 14px;
+        margin: 0px 30px;
     }
     section#articulo {
         flex-direction: column-reverse;
@@ -629,14 +578,6 @@ input[type=submit] {
         text-align: center;
     }
     .btn_section_skincare {
-        width: 90px;
-        height: 30px;
-        text-align: center;
-    }
-    .btn_section_skincare a {
-        font-size: 14px;
-    }
-    .btn_section_skincare {
         border-radius: 10px;
         border: 2px solid #2B4A86;
         width: 90px;
@@ -645,11 +586,19 @@ input[type=submit] {
         align-items: center;
         justify-content: center;
         margin: auto;
+        text-align: center;
     }
     footer {
+        margin: 20px 0;
         flex-direction: column;
         align-items: center;
-        padding: 30px;
+    }
+    footer div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
     }
 }
 
@@ -658,19 +607,23 @@ input[type=submit] {
 @media screen and (max-width: 768px) {
     section#slide-contacto {
         background-image: url("../img/slide_skincare-tablet.png");
-        height: auto;
-    }
-    /*MEDIA MOBILE SKINCARE*/
-    @media screen and (max-width: 425px) {
-        section#slide-contacto {
-            background-image: url("../img/slide_skincare-mobile.png");
-        }
     }
     .text_block_contacto {
         font-size: 12px;
     }
     .title_contacto {
         font-size: 16px;
+    }
+}
+
+/*MEDIA MOBILE SKINCARE*/
+
+@media screen and (max-width: 425px) {
+    section#slide-contacto {
+        background-image: url("../img/slide_skincare-mobile.png");
+    }
+    .section_page_skincare {
+        margin: 50px;
     }
 }
 
