@@ -18,7 +18,7 @@ section#slide {
     grid-area: slide;
     background-image: url("../img/img_slide1.png");
     background-size: cover;
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -160,6 +160,8 @@ ul.menuHeader li a:hover {
 .container_text_block {
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /*Hover animation in text block*/
@@ -224,8 +226,8 @@ ul.menuHeader li a:hover {
 .btn_section_skincare a {
     font-size: 14px;
     text-decoration: none;
-    color: #2B4A86 !important;
-    border-color: #2B4A86;
+    color: #7C95C5 !important;
+    border-color: #7C95C5;
 }
 
 .container_img_skincare {
@@ -254,7 +256,7 @@ section#slide-skincare {
     grid-area: slide;
     background-image: url("../img/slide_skincare.png");
     background-size: cover;
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -301,7 +303,7 @@ section#slide-consejos {
     grid-area: slide;
     background-image: url("../img/slide_consejos.png");
     background-size: cover;
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -353,6 +355,25 @@ section#slide-consejos {
 
 /* NOSOTROS PAGE */
 
+section#slide-nosotros {
+    grid-area: slide;
+    background-image: url("../img/slide_nosotros.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_nosotros a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #7C95C5 !important;
+    border-color: #7C95C5 !important;
+}
+
 .container_text_block_page_nosotros {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -366,6 +387,30 @@ section#slide-consejos {
     text-align: left;
     padding-left: 15%;
     padding-right: 15%;
+}
+
+.section_nosotros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Roboto";
+    padding: 5% 0%;
+}
+
+.section2_nosotros {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title_nosotros {
+    font-size: 20px;
+    color: #2B4A86;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* FOOTER */
@@ -401,7 +446,7 @@ section#slide-contacto {
     background-image: url("../img/slide_contacto.png");
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
