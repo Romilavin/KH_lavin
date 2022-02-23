@@ -24,7 +24,6 @@ section#slide {
     justify-content: flex-end;
     align-items: center;
 }
-
 section#textoboton {
     grid-area: textoboton;
     display: flex;
@@ -162,36 +161,6 @@ ul.menuHeader li a:hover {
     margin-bottom: 40px;
     margin-left: 100px;
     margin-right: 100px;
-}
-
-/*Hover animation in text block*/
-
-#textoboton::before {
-    transform: scaleX(0);
-    transform-origin: bottom right;
-}
-
-#textoboton:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-#textoboton:hover .text_block {
-    color: #ffffff;
-}
-
-#textoboton::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    inset: 0 0 0 0;
-    background: #7c95c5;
-    z-index: -1;
-    transition: transform .3s ease;
 }
 
 /* Section skincare in Home */
@@ -367,11 +336,13 @@ section#slide-nosotros {
     align-items: center;
 }
 
-.btn_nosotros a {
-    font-size: 14px;
-    text-decoration: none;
-    color: #7C95C5 !important;
-    border-color: #7C95C5 !important;
+.btn_nosotros {
+    color: #fff;
+    background-color: #7C95C5;
+    border-color: #7C95C5;
+}
+.cardTitle {
+    color: #2B4A86;
 }
 
 .container_text_block_page_nosotros {
@@ -529,6 +500,11 @@ input[type=submit] {
     width: 30%;
     height: 30px;
 }
+.btnSend{
+    color: #fff;
+    background-color: #7C95C5;
+    border-color:#7C95C5;
+}
 
 /*MEDIA TABLET HOME*/
 
@@ -564,6 +540,7 @@ input[type=submit] {
     }
     section#slide {
         background-image: url("../img/img_slide1-tablet.png");
+        height: 300px;
     }
 }
 
@@ -585,6 +562,7 @@ input[type=submit] {
     }
     section#slide {
         background-image: url("../img/img_slide1-mobile.png");
+        height: 200px;
     }
     .container_info_slide {
         width: 45%;
@@ -615,7 +593,7 @@ input[type=submit] {
         width: 100%;
     }
     .title_section_skincare {
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
     }
     .text_section_skincare {
@@ -623,16 +601,12 @@ input[type=submit] {
         text-align: center;
     }
     .btn_section_skincare {
-        border-radius: 10px;
-        border: 2px solid #2B4A86;
-        width: 90px;
-        height: 30px;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        margin: auto;
-        text-align: center;
     }
+    .container_text_block {
+        margin-left: 20px;
+        margin-right: 20px;
+    }     
     footer {
         margin: 20px 0;
         flex-direction: column;
@@ -652,6 +626,7 @@ input[type=submit] {
 @media screen and (max-width: 768px) {
     section#slide-contacto {
         background-image: url("../img/slide_skincare-tablet.png");
+        height: 300px;
     }
     .text_block_contacto {
         font-size: 12px;
@@ -677,14 +652,18 @@ input[type=submit] {
 @media screen and (max-width: 768px) {
     section#slide-contacto {
         background-image: url("../img/slide_contacto-tablet.png");
+        height: 300px;
     }
 }
-
+.section_contacto {
+    padding: 5% 10%;
+}
 /*MEDIA MOBILE CONTACT*/
 
 @media screen and (max-width: 425px) {
     section#slide-contacto {
         background-image: url("../img/slide_contacto-mobile.png");
+        height: 200px;
     }
     .section_contacto {
         width: auto;
@@ -695,5 +674,8 @@ input[type=submit] {
     }
     .title_contacto {
         font-size: 16px;
+    }
+    h2{
+        font-size: 25px;
     }
 }
