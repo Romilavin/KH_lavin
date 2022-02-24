@@ -1,4 +1,96 @@
-body {
-  background-color: tomato;
+section#slide-contacto {
+  grid-area: slide;
+  background-image: url("../img/slide_contacto.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_text_block_page_contacto {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.container_text_block_page_contacto .text_block_contacto {
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #2B4A86;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.section_contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-family: "Roboto";
+  padding: 5% 0%;
+}
+
+.section_contacto .title_contacto {
+  font-size: 20px;
+  color: #2B4A86;
+  text-align: left;
+  margin: 0;
+}
+
+.section_contacto .title_contacto .text_contacto {
+  font-size: 15px;
+  color: #7c95c5;
+  text-align: left;
+}
+
+.section_contacto .title_contacto .btnSend {
+  color: #fff;
+  background-color: #7C95C5;
+  border-color: #7C95C5;
+}
+
+/*MEDIA TABLET CONTACT*/
+@media screen and (max-width: 768px) {
+  section#slide-contacto {
+    background-image: url("../img/slide_contacto-tablet.png");
+    height: 300px;
+  }
+  .section_contacto {
+    padding: 5% 10%;
+  }
+}
+
+/*MEDIA MOBILE CONTACT*/
+@media screen and (max-width: 425px) {
+  section#slide-contacto {
+    background-image: url("../img/slide_contacto-mobile.png");
+    height: 200px;
+  }
+  .section_contacto {
+    width: auto;
+    padding: 0 40px;
+  }
+  .text_block_contacto {
+    font-size: 12px;
+  }
+  .title_contacto {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=contacto.css.map */
