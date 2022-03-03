@@ -1,0 +1,45 @@
+.icons_footer_twitter {
+  color: grey;
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.icons_footer_facebook {
+  color: blue;
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.icons_footer_youtube {
+  color: red;
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.container_text_block, .container_text_block_pink, .container_text_block_white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px;
+}
+
+.container_text_block_pink {
+  background-color: #FFEFEF;
+}
+
+.container_text_block_white {
+  background-color: #ffffff;
+}
+
+.container_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=global.css.map */

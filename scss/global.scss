@@ -1,0 +1,33 @@
+$redes:(
+    twitter: grey,
+    facebook: blue,
+    youtube: red
+);
+
+@each $rs, $color in $redes {
+    .icons_footer_#{$rs}{
+        color: $color;
+        font-size: 2rem;
+        margin-right: 5px;
+    }
+}
+.container_text_block{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+.container_text_block_pink{
+    @extend .container_text_block;
+    background-color: #FFEFEF;
+}
+.container_text_block_white{
+    @extend .container_text_block;
+    background-color: #ffffff;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+.container_text{
+    @include flex-center;
+}
