@@ -1,7 +1,7 @@
 $redes:(
-    twitter: grey,
-    facebook: blue,
-    youtube: red
+    twitter: #7C95C5,
+    facebook: #5f568b,
+    youtube: #fca89e,
 );
 
 @each $rs, $color in $redes {

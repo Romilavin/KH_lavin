@@ -24,6 +24,7 @@ section#slide {
     justify-content: flex-end;
     align-items: center;
 }
+
 section#textoboton {
     grid-area: textoboton;
     display: flex;
@@ -43,7 +44,7 @@ footer {
     background-color: #ffffff;
     font-family: "Roboto";
     font-size: 12px;
-    color: lightgrey;
+    color: grey;
     text-align: left;
     display: flex;
     justify-content: space-around;
@@ -334,6 +335,7 @@ section#slide-nosotros {
     background-color: #7C95C5;
     border-color: #7C95C5;
 }
+
 .cardTitle {
     color: #2B4A86;
 }
@@ -441,7 +443,6 @@ input[type=submit] {
     height: 30px;
 }
 
-
 /*MEDIA TABLET HOME*/
 
 @media screen and (max-width: 768px) {
@@ -538,7 +539,7 @@ input[type=submit] {
     }
     .btn_section_skincare {
         justify-content: center;
-    } 
+    }
     footer {
         margin: 20px 0;
         flex-direction: column;
@@ -573,8 +574,55 @@ input[type=submit] {
 @media screen and (max-width: 425px) {
     section#slide-skincare {
         background-image: url("../img/slide_skincare-mobile.png");
+        height: 200px;
     }
     .section_page_skincare {
         margin: 50px;
+    }
+    .text_section_page_skincare {
+        font-size: 16px;
+    }
+    .container_text_block_page_skincare {
+        padding: 20px;
+    }
+}
+
+/*MEDIA MOBILE CONSEJOS*/
+
+@media screen and (max-width: 425px) {
+    section#slide-consejos {
+        background-image: url("../img/slide_consejos-mobile.png");
+        height: 200px;
+    }
+    .container_consejos {
+        width: 100%;
+        padding: 50px;
+    }
+    .section_consejos {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .text_consejos {
+        font-size: 16px;
+        padding-top: 30px;
+    }
+    .container_img_consejos {
+        width: 100%;
+        height: 250px;
+    }
+    .info_consejos {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+
+/*MEDIA TABLET NOSOTROS*/
+
+/*MEDIA MOBILE NOSOTROS*/
+@media screen and (max-width: 425px) {
+    section#slide-nosotros {
+        background-image: url("../img/slide_nosotros-mobile.png");
+        height: 200px;
     }
 }
